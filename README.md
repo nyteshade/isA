@@ -35,8 +35,8 @@ can be used for assignment normally. If the function is invoked with a parameter
 
 Example usage:
 ```javascript
-  var isA = require('isA')();        // scoped to isA param
-  var isA = require('isA')(global);  // scoped to isA *AND* global
+  var isA = require('isa-lib')();        // scoped to isA param
+  var isA = require('isa-lib')(global);  // scoped to isA *AND* global
 ```
 
 
