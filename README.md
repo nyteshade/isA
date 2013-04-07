@@ -2,6 +2,15 @@
 
 -=-=-=-=-=-
 
+**Installation**
+
+To install the isA library, invoke
+```shell
+npm install isa-lib
+```
+
+**About**
+
 Reusable node.js/browser JavaScript library that exposes some isXXX() type of functions. These functions do as much as possible to provide cross JavaScript VM compatible methods to determine whether or not an object is of a given type.
 
 If this library is included in a browser via a script tag, all of it's components will be placed in the window scope.
