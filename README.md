@@ -26,7 +26,8 @@ Example Usage:
   console.log(IS_A.NUMBER);               // "[object Number]"
   console.log('NUMBER', 5);               // true
   console.log(isA("[object Number]", 5)); // true
-  console.log(isA(Number(), 5));          // true
+  console.log(isA(Number, 5));            // true
+  console.log(isA(String, "Hi"));         // true
 </script>
 ```
 
@@ -39,5 +40,34 @@ Example usage:
   var isA = require('isa-lib')(global);  // scoped to isA *AND* global
 ```
 
+**Library contents**
 
+```javascript
+Function isA(type, object);
+Function isUndefined(object);
+Function isFunction(object);
+Function isBoolean(object);
+Function isObject(object);
+Function isRegExp(object);
+Function isString(object);
+Function isNumber(object);
+Function isArray(object);
+Function isError(object);
+Function isNull(object);
+
+// Function to inject this library to a JavaScript scope object
+Function INJECT_IS_A_LIB(scopeObject);
+
+// Anything less than 1 indicates pairs of incorrect type designations
+Number   IS_A_ACCURACY
+
+// Array of pairs of types that incorrectly return the same value
+Array    IS_A_QUESTIONABLE
+
+// Constants of known base types
+Object   IS_A
+
+// Back reference to type string from constructor
+Array    IS_A_BACKREF
+```
 
