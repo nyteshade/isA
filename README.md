@@ -1,21 +1,36 @@
-**isA.js**
+<h1>
+isA.js
+</h1>
 
--=-=-=-=-=-
+<h2>License</h2>
+Copyright 2013 Gabriel Harrison
 
-**Installation**
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+<h2>Installation</h2>
 
 To install the isA library, invoke
 ```shell
 npm install isa-lib
 ```
 
-**About**
+<h2>About</h2>
 
 Reusable node.js/browser JavaScript library that exposes some isXXX() type of functions. These functions do as much as possible to provide cross JavaScript VM compatible methods to determine whether or not an object is of a given type.
 
 If this library is included in a browser via a script tag, all of it's components will be placed in the window scope.
 
-Example Usage:
+<h3>Example Usage:</h3>
 ```html
 <script type="text/javascript" src="/path/to/isA.js"></script>
 <script type="text/javascript">
@@ -34,13 +49,13 @@ Example Usage:
 If this library is require()'ed in node.js, it will return a function that takes either 0 or 1 parameters. If no parameters are required, the functions and properties of this library are returned in a single object literal that
 can be used for assignment normally. If the function is invoked with a parameter, that parameter is assumed to be the scope into which these functions and properties will be copied.
 
-Example usage:
+<h3>Example usage:</h3>
 ```javascript
   var isA = require('isa-lib')();        // scoped to isA param
   var isA = require('isa-lib')(global);  // scoped to isA *AND* global
 ```
 
-**Library contents**
+<h2>Library contents</h2>
 
 ```javascript
 Function isA(type, object);
