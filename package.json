@@ -1,8 +1,8 @@
 {
-  "author": "Gabriel Harrison",
+  "author": "Brielle Harrison",
   "name": "isa-lib",
   "description": "Reusable Object.prototype.toString type checking library",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "repository": {
     "url": "https://github.com/nyteshade/isA.git"
   },
